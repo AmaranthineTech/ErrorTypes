@@ -11,13 +11,13 @@ public struct MathConstants
 	static let e  : Float = 2.68791
 }
 
-public protocol Numeric
+public protocol CustomNumeric : Equatable, ExpressibleByIntegerLiteral
 {
 
 }
 
-extension Int     : Numeric {}
-extension Float   : Numeric {}
-extension Double  : Numeric {}
+extension Int     :  CustomNumeric {}
+extension Float   :  CustomNumeric {}
+extension Double  :  CustomNumeric {}
 
 
